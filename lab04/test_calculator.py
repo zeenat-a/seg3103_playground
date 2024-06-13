@@ -21,3 +21,8 @@ def test_division_by_zero():
     calc = Calculator()
     with pytest.raises(ZeroDivisionError):
         calc.divide(6, 0)
+
+def test_power():
+    calc = Calculator()
+    assert calc.power(2, 3) == 8
+
